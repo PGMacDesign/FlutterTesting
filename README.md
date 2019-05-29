@@ -1,4 +1,4 @@
-# flutter_testing_v2
+# Flutter Testing V2
 
 A new Flutter application.
 
@@ -6,7 +6,12 @@ A new Flutter application.
 
 This project is an experiment with various Flutter Tutorials.
 
-## Links:
+## Tutorial Links:
 
-1) https://www.youtube.com/watch?v=6ZCz6Ylqk3A
+1) [Build iOS & Android Apps w/ Googles Flutter & Dart](https://www.youtube.com/watch?v=6ZCz6Ylqk3A)
+
+## MIsc Links
+
+1) Cookbook (Useful Samples) - https://flutter.dev/docs/cookbook
+
 
