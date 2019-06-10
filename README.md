@@ -10,11 +10,13 @@ This project is an experiment with various Flutter Tutorials.
 
 1) [Build iOS & Android Apps w/ Googles Flutter & Dart](https://www.youtube.com/watch?v=6ZCz6Ylqk3A)
 
-2) [Flutter Layouts](https://github.com/bizz84/layout-demo-flutter) 
+2) [Flutter Layouts](https://github.com/bizz84/layout-demo-flutter). Linked from: [here](https://www.youtube.com/watch?v=-zJ6CnOVndE&t=7s)
 
-3) [Flutter Networking](https://medium.com/flutter-community/working-with-apis-in-flutter-8745968103e9)
+3) [Full Tutorial](https://www.youtube.com/watch?v=GLSG_Wh_YWc) 
 
-4) [JSON Parsing](https://medium.com/flutter-community/parsing-complex-json-in-flutter-747c46655f51) 
+4) [Flutter Networking](https://medium.com/flutter-community/working-with-apis-in-flutter-8745968103e9)
+
+5) [JSON Parsing](https://medium.com/flutter-community/parsing-complex-json-in-flutter-747c46655f51) 
 
 ## MIsc Links
 
