@@ -13,7 +13,9 @@ import 'package:flutter/material.dart';
 import './product_manager.dart';
 import 'package:flutter_testing_v2/pages/top_scrolling_recyclerview_page.dart';
 
+import 'customui/ui_builder_utils.dart';
 import 'layout_type.dart';
+import 'main_page.dart';
 //import 'package:flutter/cupertino.dart';
 //import 'package:flutter/gestures.dart';
 
@@ -28,14 +30,19 @@ void main() {
 ///
 //region classes
 
+
+
 class MyApp2 extends StatelessWidget {
 	@override
 	Widget build(BuildContext context) {
-		return new Scaffold(
-			body: new ScrollingPage(
-				layoutGroup: LayoutGroup.scrollable,
-				onLayoutToggle: null, //todo
-			),
+		return new MaterialApp(
+			title: "Flutter Testing V2",
+//			theme: new ThemeData(
+//				primarySwatch: white,
+//		        primarySwatch: customColor,
+//				brightness: Brightness.light,
+//			),
+			home: new MainPage(),
 		);
 	}
 }

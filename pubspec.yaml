@@ -24,6 +24,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+  #HTTP Requests
+  http: '>=0.12.0+2'
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -44,7 +47,24 @@ flutter:
   assets:
     - assets/amex.png
     - assets/android_toolbelt.png
-    - assets/landscape_sample_photo.png
+    - assets/landscape_photo_1.jpg
+#    - assets/landscape_photo_2.jpg
+    - assets/landscape_photo_3.jpg
+    - assets/landscape_photo_4.jpg
+    - assets/landscape_photo_5.jpg
+    - assets/landscape_photo_6.jpg
+    - assets/landscape_photo_7.jpg
+    - assets/landscape_photo_8.jpg
+    - assets/landscape_photo_9.jpg
+    - assets/portrait_photo_1.jpg
+    - assets/portrait_photo_2.jpg
+    - assets/portrait_photo_3.jpg
+    - assets/portrait_photo_4.jpg
+    - assets/portrait_photo_5.jpg
+    - assets/portrait_photo_6.jpg
+    - assets/portrait_photo_7.jpg
+    - assets/portrait_photo_8.jpg
+    - assets/portrait_photo_9.jpg
     - assets/mp4_sample_video.mp4
     - assets/shutter_black.png
     - assets/shutter_blue.png

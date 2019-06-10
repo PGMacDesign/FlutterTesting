@@ -20,7 +20,7 @@ enum LayoutType {
   pageView,
   list,
   slivers,
-  hero,
+  ScrollViewLayout,
   nested,
 }
 
@@ -42,8 +42,8 @@ String layoutName(LayoutType layoutType) {
       return 'List';
     case LayoutType.slivers:
       return 'Slivers';
-    case LayoutType.hero:
-      return 'Hero';
+    case LayoutType.ScrollViewLayout:
+      return 'Scrollview';
     case LayoutType.nested:
       return 'Nested';
     default:

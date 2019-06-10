@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_testing_v2/customui/hero_header_ui.dart';
+import 'package:flutter_testing_v2/customui/sticky_header.dart';
 import 'package:flutter_testing_v2/layout_type.dart';
 import 'package:flutter_testing_v2/customui/ui_builder_utils.dart';
 import 'package:flutter/rendering.dart';
@@ -18,7 +18,24 @@ class ScrollingPage extends StatelessWidget implements HasLayoutGroup {
 	
 	final List<String> assetNames = [
 		'assets/travolta_lost.gif',
-		'assets/landscape_sample_photo.jpg',
+		'assets/landscape_photo_1.jpg',
+//		'assets/landscape_photo_2.jpg',
+		'assets/landscape_photo_3.jpg',
+		'assets/landscape_photo_4.jpg',
+		'assets/landscape_photo_5.jpg',
+		'assets/landscape_photo_6.jpg',
+		'assets/landscape_photo_7.jpg',
+		'assets/landscape_photo_8.jpg',
+		'assets/landscape_photo_9.jpg',
+		'assets/portrait_photo_1.jpg',
+		'assets/portrait_photo_2.jpg',
+		'assets/portrait_photo_3.jpg',
+		'assets/portrait_photo_4.jpg',
+		'assets/portrait_photo_5.jpg',
+		'assets/portrait_photo_6.jpg',
+		'assets/portrait_photo_7.jpg',
+		'assets/portrait_photo_8.jpg',
+		'assets/portrait_photo_9.jpg',
 	];
 	
 	
@@ -39,9 +56,9 @@ class ScrollingPage extends StatelessWidget implements HasLayoutGroup {
 							onLayoutToggle: this.onLayoutToggle,
 							minExtent: 150.0,
 							maxExtent: 250.0,
-							imageAssetPath: assetNames[1],
-							topTitleTextString: "Stuff!",
-							topTitleTextColor: Colors.lightBlue
+							imageAssetPath: assetNames[3],
+							topTitleTextString: "My Header Section",
+							topTitleTextColor: buildMaterialColorFromHex("#F0F8FF")
 						),
 						pinned: true,
 					),
@@ -54,7 +71,7 @@ class ScrollingPage extends StatelessWidget implements HasLayoutGroup {
 									child: new Image.asset(assetNames[index % assetNames.length]),
 								);
 							},
-							childCount: assetNames.length * 10
+							childCount: assetNames.length * 2
 						),
 						gridDelegate: new SliverGridDelegateWithMaxCrossAxisExtent(
 							maxCrossAxisExtent: 200.0,
