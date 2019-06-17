@@ -6,3 +6,4 @@
 /// 4) Review the void logic in Dart - https://medium.com/flutter-community/the-curious-case-of-void-in-dart-f0535705e529
 /// 5) Experiment with the Futures logic - https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html
 /// 6) Review the Flutter Examples here - https://github.com/TakeoffAndroid/flutter-examples
+/// 7) Research Platform Views - https://medium.com/@KarthikPonnam/build-your-own-plugin-using-platformviews-flutter-5b42b4c4fb0a
