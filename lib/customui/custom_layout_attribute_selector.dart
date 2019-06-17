@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_testing_v2/datamodels/pat_value_changed_data_model.dart';
 
 class LayoutAttributeSelector extends StatefulWidget {
 	
@@ -13,7 +14,7 @@ class LayoutAttributeSelector extends StatefulWidget {
 	final String title;
 	final List<String> values;
 	final bool disabled;
-	final ValueChanged<int> onChange;
+	final ValueChanged<PatValueChangedModel> onChange;
 	
 	@override
 	State<StatefulWidget> createState() => LayoutAttributeSelectorState();
@@ -35,7 +36,7 @@ class LayoutAttributeSelectorState extends State<LayoutAttributeSelector> {
 	}
 	
 	void update() {
-		this.widget.onChange(this.valueIndex);
+		this.widget.onChange(new PatValueChangedModel(someValue: this.valueIndex));
 		this.setState(() {});
 	}
 	

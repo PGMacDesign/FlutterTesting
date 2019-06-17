@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_testing_v2/customui/custom_layout_attribute_selector.dart';
+import 'package:flutter_testing_v2/datamodels/pat_value_changed_data_model.dart';
 
 
 class BaselineLayoutAttributes extends StatefulWidget {
 	BaselineLayoutAttributes({this.onUpdateCrossAxisAlignment});
 	
-	final ValueChanged<int> onUpdateCrossAxisAlignment;
+	final ValueChanged<PatValueChangedModel> onUpdateCrossAxisAlignment;
 	
 	@override
 	State<StatefulWidget> createState() => new BaselineLayoutAttributesState();

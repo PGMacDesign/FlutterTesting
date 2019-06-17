@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_testing_v2/datamodels/pat_value_changed_data_model.dart';
 import 'package:flutter_testing_v2/layout_type.dart';
 import 'package:flutter_testing_v2/customui/main_app_bar.dart';
 import 'package:flutter_testing_v2/customui/baseline_layout_attributes.dart';
@@ -15,15 +16,20 @@ class BaselinePage extends StatefulWidget implements HasLayoutGroup {
 class BaselinePageState extends State<BaselinePage> {
 	CrossAxisAlignment _crossAxisAlignment = CrossAxisAlignment.baseline;
 	
-	CrossAxisAlignment _crossAxisAlignmentFromIndex(int index) {
+	CrossAxisAlignment _crossAxisAlignmentFromIndex(PatValueChangedModel valueChangedModel) {
+		int index = valueChangedModel.someValue;
 		switch (index) {
 			case 0:
+				//Everything aligned with the bottom; looks like a structured sentence, slight margin on the bottom to better fit. Definitely looks cleanest
 				return CrossAxisAlignment.baseline;
 			case 1:
+				//Everything is aligned with on top. NOTE! This is different than android (start) and means top instead of left?
 				return CrossAxisAlignment.start;
 			case 2:
+				//Everything is aligned with on bottom. NOTE! This is different than android (end) and means bottom instead of right?
 				return CrossAxisAlignment.end;
 			case 3:
+				//Everything is centered (Mirrors gravity == center from Android)
 				return CrossAxisAlignment.center;
 			case 4:
 				return CrossAxisAlignment.stretch;
@@ -31,21 +37,24 @@ class BaselinePageState extends State<BaselinePage> {
 		return CrossAxisAlignment.start;
 	}
 	
-	void _updateCrossAxisAlignment(int index) {
+	///Callback function that is passed in order to update which alignment is to be set
+	void _updateCrossAxisAlignment(PatValueChangedModel patChangedModel) {
 		setState(() {
-			this._crossAxisAlignment = _crossAxisAlignmentFromIndex(index);
+			this._crossAxisAlignment = _crossAxisAlignmentFromIndex(patChangedModel);
 		});
 	}
 	
 	@override
 	Widget build(BuildContext context) {
 		return new Scaffold(
+			///Building our own [MainAppBar]
 			appBar: new MainAppBar(
 				layoutGroup: this.widget.layoutGroup,
 				layoutType: LayoutType.baseline,
+				///This is adjusting the bottom of the nav bar that is up top; little bit misleading, but it is the size of the object (Height)
 				bottom: new PreferredSize(
 					preferredSize: new Size(0.0, 80.0),
-					child: _buildLayoutAttributesPage(),
+					child: this._buildLayoutAttributesPage(),
 				),
 				onLayoutToggle: this.widget.onLayoutToggle,
 			),
@@ -90,6 +99,7 @@ class BaselinePageState extends State<BaselinePage> {
 				new SizedBox(height: 30.0),
 				new Container(
 					color: Colors.yellow,
+					///This row is making a horizontal View with multiple text views
 					child: new Row(
 						crossAxisAlignment: this._crossAxisAlignment,
 						textBaseline: TextBaseline.alphabetic,

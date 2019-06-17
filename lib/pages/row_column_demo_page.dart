@@ -1,5 +1,6 @@
 
 import 'package:flutter_testing_v2/customui/custom_row_column_layout_attributes.dart';
+import 'package:flutter_testing_v2/datamodels/pat_value_changed_data_model.dart';
 import 'package:flutter_testing_v2/layout_type.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_testing_v2/customui/main_app_bar.dart';
@@ -28,7 +29,8 @@ class _RowColumnPageState extends State<RowColumnPage> {
 	
 	//region Misc Update Methods
 	
-	void _updateLayout(int index) {
+	void _updateLayout(PatValueChangedModel patChangedModel) {
+		int index = patChangedModel.someValue;
 		setState(() {
 			this._isRow = index == 0;
 		});
@@ -39,7 +41,8 @@ class _RowColumnPageState extends State<RowColumnPage> {
 	//region Main Axis Alignment
 	
 	/// This is the top right adjuster option that allows for changing the alignment
-	MainAxisAlignment _mainAxisAlignmentFromIndex(int index) {
+	MainAxisAlignment _mainAxisAlignmentFromIndex(PatValueChangedModel patChangedModel) {
+		int index = patChangedModel.someValue;
 		switch (index) {
 			case 0:
 				return MainAxisAlignment.start;
@@ -57,9 +60,10 @@ class _RowColumnPageState extends State<RowColumnPage> {
 		return MainAxisAlignment.start;
 	}
 	
-	void _updateMainAxisAlignment(int index) {
+	void _updateMainAxisAlignment(PatValueChangedModel patChangedModel) {
+		int index = patChangedModel.someValue;
 		setState(() {
-			this._mainAxisAlignment = this._mainAxisAlignmentFromIndex(index);
+			this._mainAxisAlignment = this._mainAxisAlignmentFromIndex(new PatValueChangedModel(someValue: index));
 		});
 	}
 	
@@ -68,7 +72,8 @@ class _RowColumnPageState extends State<RowColumnPage> {
 	//region Cross Axis Alignment
 	
 	/// This is for the bottom right option that allows for changing the alignment
-	CrossAxisAlignment _crossAxisAlignmentFromIndex(int index) {
+	CrossAxisAlignment _crossAxisAlignmentFromIndex(PatValueChangedModel patChangedModel) {
+		int index = patChangedModel.someValue;
 		switch (index) {
 			case 0:
 				return CrossAxisAlignment.start;
@@ -84,15 +89,17 @@ class _RowColumnPageState extends State<RowColumnPage> {
 		return CrossAxisAlignment.start;
 	}
 	
-	void _updateCrossAxisAlignment(int index) {
+	void _updateCrossAxisAlignment(PatValueChangedModel patChangedModel) {
+		int index = patChangedModel.someValue;
 		setState(() {
-			this._crossAxisAlignment = this._crossAxisAlignmentFromIndex(index);
+			this._crossAxisAlignment = this._crossAxisAlignmentFromIndex(new PatValueChangedModel(someValue: index));
 		});
 	}
 	//endregion
 	
 	//region Main Axis Size under the flex.dart file
-	void _updateMainAxisSize(int index) {
+	void _updateMainAxisSize(PatValueChangedModel patChangedModel) {
+		int index = patChangedModel.someValue;
 		setState(() {
 			this._mainAxisSize = index == 0 ? MainAxisSize.min : MainAxisSize.max;
 		});

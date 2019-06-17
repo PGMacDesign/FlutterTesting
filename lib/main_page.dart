@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_testing_v2/pages/baseline_page.dart';
+import 'package:flutter_testing_v2/pages/my_expanded_page.dart';
+import 'package:flutter_testing_v2/pages/my_stack_page.dart';
 import 'package:flutter_testing_v2/pages/row_column_demo_page.dart';
 import 'package:flutter_testing_v2/pages/top_scrolling_recyclerview_page.dart';
 
@@ -103,15 +105,15 @@ class _MainPageState extends State<MainPage> {
 	BottomNavigationBarItem _buildBottomNavBarItem(
 			{IconData icon, LayoutType layoutSelection}) {
 		String text = layoutName(layoutSelection);
-		return BottomNavigationBarItem(
-			icon: Icon(
+		return new BottomNavigationBarItem(
+			icon: new Icon(
 				icon,
-				color: _colorTabMatching(layoutSelection: layoutSelection),
+				color: this._colorTabMatching(layoutSelection: layoutSelection),
 			),
-			title: Text(
+			title: new Text(
 				text,
-				style: TextStyle(
-					color: _colorTabMatching(layoutSelection: layoutSelection),
+				style: new TextStyle(
+					color: this._colorTabMatching(layoutSelection: layoutSelection),
 				),
 			),
 		);
@@ -126,27 +128,27 @@ class _MainPageState extends State<MainPage> {
 				: this._layoutSelection2;
 		switch (layoutSelection) {
 			case LayoutType.rowColumn:
-				return new RowColumnPage(layoutGroup: this._layoutGroup, onLayoutToggle: _onLayoutGroupToggle);
+				return new RowColumnPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 			case LayoutType.baseline:
-				return new BaselinePage(layoutGroup: this._layoutGroup, onLayoutToggle: _onLayoutGroupToggle);
-//			case LayoutType.stack:
-//				return new StackPage(layoutGroup: this._layoutGroup, onLayoutToggle: _onLayoutGroupToggle);
-//			case LayoutType.expanded:
-//				return new ExpandedPage(layoutGroup: this._layoutGroup, onLayoutToggle: _onLayoutGroupToggle);
+				return new BaselinePage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
+			case LayoutType.stack:
+				return new StackPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
+			case LayoutType.expanded:
+				return new ExpandedPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 //			case LayoutType.padding:
-//				return new PaddingPage(layoutGroup: this._layoutGroup, onLayoutToggle: _onLayoutGroupToggle);
+//				return new PaddingPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 //			case LayoutType.pageView:
-//				return new PageViewPage(layoutGroup: this._layoutGroup, onLayoutToggle: _onLayoutGroupToggle);
+//				return new PageViewPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 //			case LayoutType.list:
-//				return new ListPage(layoutGroup: this._layoutGroup, onLayoutToggle: _onLayoutGroupToggle);
+//				return new ListPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 //			case LayoutType.slivers:
-//				return new SliversPage(layoutGroup: this._layoutGroup, onLayoutToggle: _onLayoutGroupToggle);
+//				return new SliversPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 			
 			case LayoutType.ScrollViewLayout:
 			default:
-				return new ScrollingPage(layoutGroup: this._layoutGroup, onLayoutToggle: _onLayoutGroupToggle);
+				return new ScrollingPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 //			case LayoutType.nested:
-//				return new NestedPage(layoutGroup: _layoutGroup, onLayoutToggle: _onLayoutGroupToggle);
+//				return new NestedPage(layoutGroup: _layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 		}
 		return null;
 	}

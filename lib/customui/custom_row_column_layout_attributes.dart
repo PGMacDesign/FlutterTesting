@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_testing_v2/customui/custom_layout_attribute_selector.dart';
+import 'package:flutter_testing_v2/datamodels/pat_value_changed_data_model.dart';
 
 class RowColumnLayoutAttributes extends StatelessWidget {
 	RowColumnLayoutAttributes(
@@ -8,10 +9,11 @@ class RowColumnLayoutAttributes extends StatelessWidget {
 	  this.onUpdateCrossAxisAlignment,
 	  this.onUpdateMainAxisSize});
 	
-	final ValueChanged<int> onUpdateLayout;
-	final ValueChanged<int> onUpdateMainAxisAlignment;
-	final ValueChanged<int> onUpdateCrossAxisAlignment;
-	final ValueChanged<int> onUpdateMainAxisSize;
+	///Functions for use with callbacks. [PatValueChangedModel]
+	final ValueChanged<PatValueChangedModel> onUpdateLayout;
+	final ValueChanged<PatValueChangedModel> onUpdateMainAxisAlignment;
+	final ValueChanged<PatValueChangedModel> onUpdateCrossAxisAlignment;
+	final ValueChanged<PatValueChangedModel> onUpdateMainAxisSize;
 	
 	@override
 	Widget build(BuildContext context) {
