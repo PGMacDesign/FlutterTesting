@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_testing_v2/layout_type.dart';
 import 'package:flutter_testing_v2/customui/main_app_bar.dart';
+import 'package:flutter_testing_v2/customui/ui_builder_utils.dart';
 
+/// Class shows boxes expanding the screen and how the different ratios affect how it is drawn
 class ExpandedPage extends StatelessWidget implements HasLayoutGroup {
 	final LayoutGroup layoutGroup;
 	final VoidCallback onLayoutToggle;
 
+	/// Main Constructor
 	ExpandedPage(
 			{Key key, this.layoutGroup, this.onLayoutToggle}
 			) : super(key: key);
 	
+	/// Main Build Operator
 	@override
 	Widget build(BuildContext context) {
 		return new Scaffold(
@@ -24,50 +28,63 @@ class ExpandedPage extends StatelessWidget implements HasLayoutGroup {
 		);
 	}
 	
+	///Builds a single box to use. The vars passed in determine the various size arguments
 	Widget _buildBox({int points, Color color, Color textColor = Colors.white}) {
+		var fontsizeVar = 10.0;
+		fontsizeVar = (fontsizeVar * ((points >= 1) ? points : 1));
+		if(fontsizeVar >= 100){
+			fontsizeVar = 100;
+		}
 		return new Expanded(
 			flex: points,
 			child: new Container(
 				constraints: new BoxConstraints.expand(),
+//				constraints: new BoxConstraints.tightForFinite(),
 				color: color,
 				child: new Center(
 					child: new Text(
 						'$points',
-						style: new TextStyle(fontSize: 32.0, color: textColor),
+						style: new TextStyle(fontSize: fontsizeVar, color: textColor),
 					),
 				),
 			),
 		);
 	}
 	
-	Size _goldenRatio(BoxConstraints constraints) {
+	/// Builds the return size of the entire layout (all sub-layouts nested within this)
+	static Size _goldenRatio(BoxConstraints constraints) {
+		return _goldenRatio2(constraints, false);
+	}
+	
+	/// Need to research Overloading more - https://medium.com/@dumazy/enhance-your-classes-with-operator-overloading-in-dart-f1124bd813a0
+	/// Builds the return size of the entire layout (all sub-layouts nested within this)
+	static Size _goldenRatio2(BoxConstraints constraints, bool useFullScreen) {
+		///Using a 'golden ratio' will fit phones more frequently
 		double ratio = 13.0 / 8.0;
-		if (constraints.maxHeight / constraints.maxWidth > ratio) {
-			double height = constraints.maxWidth * ratio;
-			return new Size(constraints.maxWidth, height);
+		///Using a ratio of 1:1 will make for a perfect square
+//		double ratio = 1 / 1;
+		///Using a ratio of 1:2 will make for a rectangle with a width > height
+//		double ratio = 1 / 2;
+		///Using a ratio of 2:1 will make for a rectangle with a height > width
+//		double ratio = 2 / 1;
+		if(useFullScreen){
+			//This will make it full screen
+			return new Size(constraints.maxWidth, constraints.maxHeight);
 		} else {
-			double width = constraints.maxHeight / ratio;
-			return new Size(width, constraints.maxHeight);
+			if (constraints.maxHeight / constraints.maxWidth > ratio) {
+				double height = constraints.maxWidth * ratio;
+				return new Size(constraints.maxWidth, height);
+			} else {
+				double width = constraints.maxHeight / ratio;
+				return new Size(width, constraints.maxHeight);
+			}
 		}
 	}
 	
-	Widget _centeredLayout({Widget child}) {
-		return new LayoutBuilder(builder: (content, constraints) {
-			Size size = this._goldenRatio(constraints);
-			return new Center(
-				child: new Container(
-					constraints: new BoxConstraints(
-						maxWidth: size.width,
-						maxHeight: size.height,
-					),
-					child: child,
-				),
-			);
-		});
-	}
 	
+	/// This builds out the boxes on the screen
 	Widget _buildContent() {
-		return this._centeredLayout(
+		return UIUtilities.centeredLayout(null, true,
 			child: new Column(
 				children: [
 					this._buildBox(points: 8, color: Colors.red),
@@ -90,6 +107,15 @@ class ExpandedPage extends StatelessWidget implements HasLayoutGroup {
 																children: [
 																	this._buildBox(points: 1, color: Colors.green),
 																	this._buildBox(points: 1, color: Colors.blue),
+																	new Expanded(
+																		flex: 1,
+																		child: new Column(
+																			children: [
+																				this._buildBox(points: 1, color: Colors.orange),
+																				this._buildBox(points: 1, color: Colors.yellow),
+																			],
+																		),
+																	),
 																],
 															),
 														),

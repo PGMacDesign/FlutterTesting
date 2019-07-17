@@ -47,7 +47,7 @@ class PinnedScrollingImageHeader implements SliverPersistentHeaderDelegate {
 					fit: BoxFit.cover,
 				),
 				//From ui_builder_utils
-				buildContainerWithGradientAtBottom(),
+				UIUtilities.buildContainerWithGradientAtBottom(),
 				//Custom Positioned Text
 				new Positioned(
 					left: 16.0,

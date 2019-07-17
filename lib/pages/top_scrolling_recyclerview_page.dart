@@ -58,7 +58,7 @@ class ScrollingPage extends StatelessWidget implements HasLayoutGroup {
 							maxExtent: 250.0,
 							imageAssetPath: assetNames[3],
 							topTitleTextString: "My Header Section",
-							topTitleTextColor: buildMaterialColorFromHex("#F0F8FF")
+							topTitleTextColor: UIUtilities.buildMaterialColorFromHex("#F0F8FF")
 						),
 						pinned: true,
 					),
