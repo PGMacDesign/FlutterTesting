@@ -155,4 +155,26 @@ class UIUtilities {
 			);
 		});
 	}
+	
+	static Widget buildLayoutWithColoredEdgePadding(){
+	
+	}
+	
+	/// Builds a text view with a background color, text color, and font size.
+	/// The size of it is based off of a 'wrap_content' logic that uses the textFontSize to measure.
+	/// More customized vars are available
+	static Widget buildStandardTextView({String text = "", Color backgroundColor = Colors.white, Color textColor = Colors.black,
+		AlignmentDirectional textAlignment = AlignmentDirectional.center, double textFontSize = 32.0}) {
+		return new Container(
+			///This alignment will adjust where the text views are
+//			alignment: AlignmentDirectional.centerStart,
+			alignment: textAlignment,
+			color: backgroundColor,
+			child: new Text(
+				text,
+				style: new TextStyle(color: textColor, fontSize: textFontSize),
+				textAlign: TextAlign.center,
+			),
+		);
+	}
 }

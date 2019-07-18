@@ -4,11 +4,12 @@ import 'package:flutter_testing_v2/pages/my_expanded_page.dart';
 import 'package:flutter_testing_v2/pages/my_stack_page.dart';
 import 'package:flutter_testing_v2/pages/row_column_demo_page.dart';
 import 'package:flutter_testing_v2/pages/top_scrolling_recyclerview_page.dart';
+import 'package:flutter_testing_v2/pages/padding_page.dart';
 
 import 'layout_type.dart';
 import 'package:flutter_testing_v2/misc/my_logging.dart';
 
-///
+///todo need to adjust the button between layouts 1/2 so that I can go back to the previous one
 class MainPage extends StatefulWidget {
 	MainPage({Key key}) : super(key: key);
 	
@@ -135,8 +136,8 @@ class _MainPageState extends State<MainPage> {
 				return new StackPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 			case LayoutType.expanded:
 				return new ExpandedPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
-//			case LayoutType.padding:
-//				return new PaddingPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
+			case LayoutType.padding:
+				return new PaddingPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 //			case LayoutType.pageView:
 //				return new PageViewPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 //			case LayoutType.list:
