@@ -8,7 +8,7 @@ This project is an experiment with various Flutter Tutorials.
 
 ## Tutorial and Info Links:
 
-01) [Build iOS & Android Apps w/ Googles Flutter & Dart](https://www.youtube.com/watch?v=6ZCz6Ylqk3A)
+01) [Build iOS & Android Apps w/ Google's Flutter & Dart](https://www.youtube.com/watch?v=6ZCz6Ylqk3A)
 	This tutorial went through the basics of the Flutter platform. I used parts of it in the initial builds, but have replaced a good amount of it since then.
 	
 02) [Flutter Layouts](https://github.com/bizz84/layout-demo-flutter). Linked from: [here](https://www.youtube.com/watch?v=-zJ6CnOVndE&t=7s)
