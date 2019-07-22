@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_testing_v2/customui/main_app_bar.dart';
 import 'package:flutter_testing_v2/customui/sticky_header.dart';
 import 'package:flutter_testing_v2/layout_type.dart';
 import 'package:flutter_testing_v2/customui/ui_builder_utils.dart';
@@ -16,6 +17,7 @@ class ScrollingPage extends StatelessWidget implements HasLayoutGroup {
 	
 	ScrollingPage({Key key, this.layoutGroup, this.onLayoutToggle}) : super(key: key);
 	
+	//List of assets to use in the grid
 	final List<String> assetNames = [
 		'assets/travolta_lost.gif',
 		'assets/landscape_photo_1.jpg',
@@ -38,18 +40,25 @@ class ScrollingPage extends StatelessWidget implements HasLayoutGroup {
 		'assets/portrait_photo_9.jpg',
 	];
 	
-	
+	///Build an scrolling recyclerview page with the app bar up top
 	@override
 	Widget build(BuildContext context) {
 		return new Scaffold(
+			appBar: new MainAppBar(
+				layoutGroup: layoutGroup,
+				layoutType: LayoutType.pageView,
+				onLayoutToggle: onLayoutToggle,
+			),
 			body: _scrollView(context),
 		);
 	}
 	
+	///Create a scrollview with slivers in it
 	Widget _scrollView(BuildContext context){
 		Container container = new Container(
 			child: new CustomScrollView(
 				slivers: <Widget>[
+					//todo refactor this out to UIUtilities
 					new SliverPersistentHeader(
 						delegate: new PinnedScrollingImageHeader(
 							layoutGroup: this.layoutGroup,
@@ -62,6 +71,7 @@ class ScrollingPage extends StatelessWidget implements HasLayoutGroup {
 						),
 						pinned: true,
 					),
+					//todo refactor this out to UIUtilities
 					new SliverGrid(
 						delegate: new SliverChildBuilderDelegate(
 							(BuildContext context, int index) {
@@ -90,6 +100,7 @@ class ScrollingPage extends StatelessWidget implements HasLayoutGroup {
 
 //region Misc Methods
 
+//todo refactor this out to UIUtilities
 EdgeInsets _edgeInsetsForIndex(int index){
 	if(index %2 == 0){
 		return EdgeInsets.only(

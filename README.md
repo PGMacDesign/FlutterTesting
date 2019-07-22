@@ -1,12 +1,14 @@
 # Flutter Testing V2
 
-A new Flutter application.
+A new Flutter application with the purpose of being used to learn the framework and Dart language.
 
 ## Getting Started
 
 This project is an experiment with various Flutter Tutorials.
 
-## Tutorial and Info Links:
+It will be a collection of tutorials, experiments, and code snippets pulled from the [Tutorial and Info Links](#tutorial-and-info-links) section 
+
+## Tutorial and Info Links
 
 01) [Build iOS & Android Apps w/ Google's Flutter & Dart](https://www.youtube.com/watch?v=6ZCz6Ylqk3A)
 
@@ -16,6 +18,7 @@ This project is an experiment with various Flutter Tutorials.
 
 	This is a collection of layouts and sample code pieces that gives a ton of info on how to use the Flutter UI. 
 	I will mostly copy this code over and go through it piece by piece to try and break things until I understand how they work.
+	This is a great tutorial for learning how the various Flutter widgets work and can be created / augmented.
 
 03) [Full Tutorial](https://www.youtube.com/watch?v=GLSG_Wh_YWc) 
 
@@ -53,11 +56,32 @@ This project is an experiment with various Flutter Tutorials.
 
 	TBD
 
+11) [Ant Icons](https://pub.dev/packages/ant_icons) 
+
+	TBD
+	
+12) [Level up Page Transition](https://medium.com/@lvlzeros/level-up-flutter-page-transition-choreographing-animations-across-screens-efb5ea105fca) 
+
+	TBD
+	
+13) [Building an App using Streams](https://medium.com/flutter-community/building-a-reactive-and-persistent-flutter-app-using-streams-4d6b947c5cb5) 
+
+	TBD
+	
+14) [Reorderable List View](https://youtu.be/3fB1mxOsqJE) 
+
+	TBD
+	
+15) [TBD](TBD) 
+
+	TBD
+	
+
 
 
 
 ## Misc Links
 
-1) Cookbook (Useful Samples) - https://flutter.dev/docs/cookbook
+1) [Flutter Cookbook (Useful Samples)](https://flutter.dev/docs/cookbook)
 
 

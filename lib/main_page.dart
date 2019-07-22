@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_testing_v2/pages/baseline_page.dart';
 import 'package:flutter_testing_v2/pages/my_expanded_page.dart';
 import 'package:flutter_testing_v2/pages/my_stack_page.dart';
+import 'package:flutter_testing_v2/pages/page_view_page.dart';
 import 'package:flutter_testing_v2/pages/row_column_demo_page.dart';
 import 'package:flutter_testing_v2/pages/top_scrolling_recyclerview_page.dart';
 import 'package:flutter_testing_v2/pages/padding_page.dart';
@@ -138,8 +139,8 @@ class _MainPageState extends State<MainPage> {
 				return new ExpandedPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 			case LayoutType.padding:
 				return new PaddingPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
-//			case LayoutType.pageView:
-//				return new PageViewPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
+			case LayoutType.pageView:
+				return new PageViewPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 //			case LayoutType.list:
 //				return new ListPage(layoutGroup: this._layoutGroup, onLayoutToggle: this._onLayoutGroupToggle);
 //			case LayoutType.slivers:

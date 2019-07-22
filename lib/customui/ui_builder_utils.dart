@@ -177,4 +177,23 @@ class UIUtilities {
 			),
 		);
 	}
+	
+	static Widget buildPageWithTextInCenter({String textString = "Hello World!",
+				Color backgroundColor = Colors.white,
+				double fontTextSize = 132.0,
+				Color textColor = Colors.white}) {
+		return new Container(
+			alignment: AlignmentDirectional.center,
+			color: backgroundColor,
+			child: new Text(
+				'$textString',
+				style: new TextStyle(
+						fontSize: fontTextSize,
+						color: textColor,
+				),
+			),
+		);
+	}
+	
+	
 }
