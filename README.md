@@ -72,7 +72,75 @@ It will be a collection of tutorials, experiments, and code snippets pulled from
 
 	TBD
 	
-15) [TBD](TBD) 
+15) [Flutter For Web](https://itnext.io/getting-started-with-flutter-forweb-c0647ed51b88) 
+
+	TBD
+		
+16) [Semantics (Flutter Widget)](https://youtu.be/NvtMt_DtFrQ) 
+
+	TBD
+		
+17) [Flutter Navigation](https://www.raywenderlich.com/4562634-flutter-navigation-getting-started) 
+
+	TBD
+		
+18) [Flutter Widgets of the Week](https://www.youtube.com/watch?v=9hltevOHQBw&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=6) 
+
+	Collections of Widgets of the week that are highlighted on the flutter dev youtube channel.
+		
+19) [Unblocking UI Thread with Computational Thread](https://www.gladimdim.org/flutter-unblocking-ui-thread-with-isolates-compute-function-ck03qrwnj000peks1zvhvko1x) 
+
+	Utilizing different computational threads to unblock the main thread
+		
+20) [Creating 'Slowly' App UI with Flutter ](https://blog.usejournal.com/creating-slowly-app-ui-with-flutter-part-1-c3faeb36ec51?gi=ca1feecb2ef9) 
+
+	Clean looking UI from a guide; copying over for better understanding of how it works.
+		
+21) [Recreating Slack app’s on-boarding animation](https://medium.com/flutter-community/recreating-slack-apps-on-boarding-animation-with-flutter-ec226ea19403) 
+
+	Animation logic and better understanding of how to reverse engineer other projects' elements. 
+		
+22) [Manage Connectivity In Your Flutter App](https://medium.com/flutter-community/manage-connectivity-in-your-flutter-app-325bcb04ea7e) 
+
+	Managing internet connectivity
+	
+		
+23) [Game Library App UI](https://cybdom.tech/flutter-tutorial-game-library-app-ui/) 
+
+	Recreating a clean game UI that mirrors what many professionals use
+	
+		
+24) [TBD](TBD) 
+
+	TBD
+	
+		
+25) [TBD](TBD) 
+
+	TBD
+	
+		
+26) [TBD](TBD) 
+
+	TBD
+	
+		
+27) [TBD](TBD) 
+
+	TBD
+	
+		
+28) [TBD](TBD) 
+
+	TBD
+		
+		
+29) [TBD](TBD) 
+
+	TBD
+		
+		
+30) [TBD](TBD) 
 
 	TBD
 	
