@@ -110,9 +110,9 @@ It will be a collection of tutorials, experiments, and code snippets pulled from
 	Recreating a clean game UI that mirrors what many professionals use
 	
 		
-24) [TBD](TBD) 
+24) [Web App Tutorial](https://medium.com/flutter-community/how-i-created-my-first-flutter-web-app-b6366ff43ba3) 
 
-	TBD
+	Creating a web app using Flutter
 	
 		
 25) [TBD](TBD) 
