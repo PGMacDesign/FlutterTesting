@@ -115,17 +115,17 @@ It will be a collection of tutorials, experiments, and code snippets pulled from
 	Creating a web app using Flutter
 	
 		
-25) [TBD](TBD) 
+25) [Flutter Crash Course](https://fluttercrashcourse.com/courses/basics) 
 
 	TBD
 	
 		
-26) [TBD](TBD) 
+26) [Fluter Plant Shop UI](https://cybdom.tech/flutter-tutorial-plant-shop-ui/) 
 
-	TBD
+	Clean UI sample for a plant shop. 
 	
 		
-27) [TBD](TBD) 
+27) [Hotel Booking UI](https://codecanyon.net/item/flutter-android-and-ios-hotel-booking-ui-template/24641973) 
 
 	TBD
 	
