@@ -130,7 +130,7 @@ It will be a collection of tutorials, experiments, and code snippets pulled from
 	TBD
 	
 		
-28) [TBD](TBD) 
+28) [Flutter Desktop](https://medium.com/flutter-community/flutter-for-desktop-create-and-run-a-desktop-application-ebeb1604f1e0) 
 
 	TBD
 		
