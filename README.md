@@ -135,12 +135,52 @@ It will be a collection of tutorials, experiments, and code snippets pulled from
 	TBD
 		
 		
-29) [TBD](TBD) 
+29) [Some new Widgets including a Unity One](https://medium.com/flutterforce/flutterforce-week-49-56eac99e01ee) 
 
 	TBD
 		
 		
-30) [TBD](TBD) 
+30) [60 Days of Flutter Posts](https://medium.com/@adityadroid/60-days-of-flutter-building-a-messenger-day-60-wrapping-it-up-ae645037610b) 
+
+	This is the last post in the 60 days of Flutter blog series. Definitely worth the read + tests.	
+		
+31) [TBD](TBD) 
+
+	TBD	
+		
+32) [TBD](TBD) 
+
+	TBD	
+		
+33) [TBD](TBD) 
+
+	TBD	
+		
+34) [TBD](TBD) 
+
+	TBD	
+		
+35) [TBD](TBD) 
+
+	TBD	
+		
+36) [TBD](TBD) 
+
+	TBD	
+		
+37) [TBD](TBD) 
+
+	TBD	
+		
+38) [TBD](TBD) 
+
+	TBD	
+		
+39) [TBD](TBD) 
+
+	TBD	
+		
+40) [TBD](TBD) 
 
 	TBD
 	
