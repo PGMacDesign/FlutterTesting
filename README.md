@@ -144,13 +144,13 @@ It will be a collection of tutorials, experiments, and code snippets pulled from
 
 	This is the last post in the 60 days of Flutter blog series. Definitely worth the read + tests.	
 		
-31) [TBD](TBD) 
+31) [Real Estate App](https://cybdom.tech/flutter-tutorial-real-estate-app/) 
 
-	TBD	
+	Clean looking app mimicking a native real estate app. 	
 		
-32) [TBD](TBD) 
+32) [Interactive Password Manager](https://cybdom.tech/flutter-tutorial-real-estate-app/) 
 
-	TBD	
+	Interactive Password Manager with dynamic UI elements	
 		
 33) [TBD](TBD) 
 
