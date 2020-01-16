@@ -156,21 +156,21 @@ It will be a collection of tutorials, experiments, and code snippets pulled from
 
 	TBD	
 		
-34) [TBD](TBD) 
+34) [22 Short Lessons To Become A Mobile Programmer Using Flutter Framework](https://dev.to/zaiste/22-short-lessons-to-become-a-mobile-programmer-using-flutter-framework-d9j) 
 
 	TBD	
 		
-35) [TBD](TBD) 
+35) [Exploring Flutter camera plugin](https://medium.com/@divyanshub024/exploring-flutter-camera-plugin-d2c54ac95f05) 
 
 	TBD	
 		
-36) [TBD](TBD) 
+36) [Functional Flutter Error Handling ](https://youtu.be/ZTU-WWEOoII) 
 
 	TBD	
 		
-37) [TBD](TBD) 
+37) [API and Networking](https://itnext.io/flutter-handling-your-network-api-calls-like-a-boss-936eef296547) 
 
-	TBD	
+	API calls and networking	
 		
 38) [TBD](TBD) 
 
